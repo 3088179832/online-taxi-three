@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7900:7900/eureka/
+    registry-fetch-interval-seconds: 30
+    enabled: true
+  instance:
+    lease-renewal-interval-in-seconds: 30
+
+spring:
+  application:
+    name: api-passenger
+logging:
+  level:
+    root: debug
+ribbon:
+  eager-load:
+    enabled: true
+    clients: demo
