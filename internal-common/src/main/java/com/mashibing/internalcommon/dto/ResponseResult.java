@@ -1,10 +1,11 @@
 package com.mashibing.internalcommon.dto;
 
+import java.io.Serializable;
+
 import com.mashibing.internalcommon.constant.CommonStatusEnum;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
-
-import java.io.Serializable;
 
 /**
  * 通用返回值处理类
@@ -21,13 +22,13 @@ import java.io.Serializable;
 @SuppressWarnings("all")
 public class ResponseResult<T> implements Serializable {
 
-    private static final long serialVersionUID = -2073390651767969040L;
-
-    private int code;
+	private static final long serialVersionUID = -2073390651767969040L;
+	
+	private int code;
     private String message;
     private T data;
-
-    /**
+    
+	/**
      * 返回成功数据（status：1）
      *
      * @param data 数据内容

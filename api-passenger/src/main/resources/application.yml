@@ -16,7 +16,7 @@ spring:
 logging:
   level:
     root: debug
-ribbon:
-  eager-load:
-    enabled: true
-    clients: demo
+#ribbon:
+#  eager-load:
+#    enabled: true
+#    clients: demo
